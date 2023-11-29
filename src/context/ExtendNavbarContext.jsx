@@ -11,7 +11,11 @@ function ExtendNavbarProvider({ children }) {
 
   useEffect(
     function () {
-      document.body.classList.toggle("scrollHidden");
+      if (isExtend) {
+        document.body.classList.add("scrollHidden");
+      } else {
+        document.body.classList.remove("scrollHidden");
+      }
     },
     [isExtend]
   );
