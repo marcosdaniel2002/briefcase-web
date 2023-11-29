@@ -185,7 +185,14 @@ max-width: 100%;
 /* For dark mode */
 filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
+& .scrollHidden{
+ overflow-y: hidden;
+}
 
+& .section--hidden {
+opacity: 0;
+transform: translateY(8rem);
+}
 `;
 
 export default GlobalStyles;

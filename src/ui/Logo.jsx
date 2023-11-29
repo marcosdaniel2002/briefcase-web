@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const StyledLogo = styled.div`
   & svg {
-    width: 4rem;
-    height: 4rem;
+    width: 2.5em;
+    height: 2.5em;
     color: var(--color-grey-800);
     transition: all 0.3s;
   }

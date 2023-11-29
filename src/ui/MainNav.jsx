@@ -1,27 +1,73 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { breakpoints } from "../styles/Breakpoints";
-import Hamburguer from "./Hamburguer";
-import ExtendedNav from "./ExtendendNav";
 
-const NavList = styled.ul`
+import ButtonTheme from "./ButtonTheme";
+
+const Nav = styled.nav`
   display: none;
-  gap: 0.8rem;
-  background-color: white;
+  font-size: 1.3rem;
 
   @media (min-width: ${breakpoints.sm}) {
     display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    font-size: 1.4rem;
+  }
+`;
+
+const NavList = styled.ul`
+  display: flex;
+  font-weight: 600;
+  gap: 1em;
+  @media (min-width: ${breakpoints.md}) {
+    gap: 2em;
   }
 `;
 
 const StyledNavLink = styled(NavLink)`
-  background-color: yellow;
+  position: relative;
+  padding: 0 1em;
+
+  &.active {
+    color: var(--color-grey-900);
+    border-bottom: solid 2px var(--color-grey-900);
+  }
+  &:not(.active) {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      border-bottom: solid 2px var(--color-grey-900);
+    }
+    &:hover:before {
+      animation: border_anim 0.2s linear forwards;
+    }
+
+    &:hover {
+      color: var(--color-grey-900);
+    }
+
+    @keyframes border_anim {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 function MainNav() {
   return (
     <>
-      <nav>
+      <Nav>
         <NavList>
           <li>
             <StyledNavLink to="/">Home</StyledNavLink>
@@ -36,9 +82,8 @@ function MainNav() {
             <StyledNavLink to="/projects">Projects</StyledNavLink>
           </li>
         </NavList>
-      </nav>
-      <Hamburguer />
-      <ExtendedNav />
+        <ButtonTheme size="small" />
+      </Nav>
     </>
   );
 }

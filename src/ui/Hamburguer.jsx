@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpoints } from "../styles/Breakpoints";
+import { useExtendNavbar } from "../context/ExtendNavbarContext";
 
 const StyledHamburguer = styled.div`
   .visuallyHidden {
@@ -88,12 +89,16 @@ const StyledHamburguer = styled.div`
 `;
 
 function Hamburguer() {
+  const { isExtend, toggleExtendNavbar } = useExtendNavbar();
+
   return (
     <StyledHamburguer>
       <input
         type="checkbox"
         id="checkbox3"
         className="checkbox3 visuallyHidden"
+        checked={isExtend}
+        onChange={toggleExtendNavbar}
       />
       <label htmlFor="checkbox3">
         <div className="hamburger hamburger3">

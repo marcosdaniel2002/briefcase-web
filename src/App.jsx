@@ -1,10 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import AppLayout from "./ui/AppLayout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
 import GlobalStyles from "./styles/GlobalStyles";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 const router = createBrowserRouter([
   {
@@ -32,10 +34,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
+    <DarkModeProvider>
       <GlobalStyles />
       <RouterProvider router={router} />
-    </>
+    </DarkModeProvider>
   );
 }
 
