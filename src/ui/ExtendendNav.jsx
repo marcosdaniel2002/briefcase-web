@@ -12,7 +12,7 @@ const Nav = styled.nav`
   width: 100%;
   transition: background-color 0.3s, border 0.3s, top 0.5s;
   left: 0;
-  top: -700px;
+  top: -1000px;
 
   &.active {
     top: 70px;
