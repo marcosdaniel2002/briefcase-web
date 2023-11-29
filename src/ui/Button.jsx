@@ -35,6 +35,7 @@ const Button = styled.button`
   margin: auto;
   border: none;
   display: flex;
+  align-items: center;
   gap: 1em;
 
   & svg {
