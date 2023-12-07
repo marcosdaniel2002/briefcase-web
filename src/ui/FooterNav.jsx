@@ -1,5 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { scrollToTop } from "../utils/helpers";
 
 const StyledFooterNav = styled.nav`
   & ul {
@@ -11,23 +12,35 @@ const StyledFooterNav = styled.nav`
   & li {
     padding: 0.5em;
   }
+
+  & a {
+    cursor: pointer;
+  }
 `;
 
 function FooterNav() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  function handleNavigation(route) {
+    if (location.pathname !== route) navigate(route);
+    else scrollToTop();
+  }
+
   return (
     <StyledFooterNav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <a onClick={() => handleNavigation("/")}>Home</a>
         </li>
         <li>
-          <Link to="/about">About me</Link>
+          <a onClick={() => handleNavigation("/about")}>About me</a>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a onClick={() => handleNavigation("/contact")}>Contact</a>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <a onClick={() => handleNavigation("/projects")}>Projects</a>
         </li>
       </ul>
     </StyledFooterNav>

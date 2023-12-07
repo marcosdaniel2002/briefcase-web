@@ -37,22 +37,30 @@ const NavList = styled.ul`
 const StyledNavLink = styled(NavLink)``;
 
 function ExtendedNav() {
-  const { isExtend } = useExtendNavbar();
+  const { isExtend, toggleExtendNavbar } = useExtendNavbar();
 
   return (
     <Nav className={isExtend ? "active" : ""}>
       <NavList>
         <li>
-          <StyledNavLink to="/">Home</StyledNavLink>
+          <StyledNavLink to="/" onClick={toggleExtendNavbar}>
+            Home
+          </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/about">About me</StyledNavLink>
+          <StyledNavLink to="/about" onClick={toggleExtendNavbar}>
+            About me
+          </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/contact">Contact</StyledNavLink>
+          <StyledNavLink to="/contact" onClick={toggleExtendNavbar}>
+            Contact
+          </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/projects">Project</StyledNavLink>
+          <StyledNavLink to="/projects" onClick={toggleExtendNavbar}>
+            Project
+          </StyledNavLink>
         </li>
         <li>
           <ButtonTheme>Switch to</ButtonTheme>

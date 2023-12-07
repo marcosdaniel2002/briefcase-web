@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import MainNav from "./MainNav";
-
-import Logo from "./Logo";
 import { breakpoints } from "../styles/Breakpoints";
+
+import MainNav from "./MainNav";
+import Logo from "./Logo";
 import Hamburguer from "./Hamburguer";
 
 const StyledHeader = styled.header`

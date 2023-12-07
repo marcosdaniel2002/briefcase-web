@@ -1,8 +1,9 @@
-import { Outlet } from "react-router-dom";
-import Header from "./Header";
 import styled from "styled-components";
-import ExtendedNav from "./ExtendendNav";
+import { Outlet } from "react-router-dom";
 import { ExtendNavbarProvider } from "../context/ExtendNavbarContext";
+
+import Header from "./Header";
+import ExtendedNav from "./ExtendendNav";
 import Footer from "./Footer";
 
 const StyledLayout = styled.div``;

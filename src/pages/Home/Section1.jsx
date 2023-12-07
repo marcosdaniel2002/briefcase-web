@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Button from "../../ui/Button";
 import TypeWriter from "../../ui/TypeWriter";
-import { useEffect } from "react";
 
 const Section = styled.section`
   display: flex;
