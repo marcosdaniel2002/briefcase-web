@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import ProjectCardV2 from "./ProjectCardV2";
 
 const StyledMoreProjects = styled.div`
   display: flex;
+  flex-direction: column;
+  gap: 2em;
   padding: 3em 0;
 `;
 
@@ -20,7 +23,7 @@ const Header = styled.header`
   }
 `;
 
-function MoreProjects() {
+function MoreProjects({ projects }) {
   return (
     <>
       <StyledMoreProjects>
@@ -28,6 +31,16 @@ function MoreProjects() {
           <h2>More projects</h2>
           <span></span>
         </Header>
+        {projects.map((project, i) => (
+          <ProjectCardV2
+            key={i}
+            title={project.title}
+            description={project.description}
+            tecnologies={project.tecnologies}
+            live={project.live}
+            github={project.github}
+          />
+        ))}
       </StyledMoreProjects>
     </>
   );

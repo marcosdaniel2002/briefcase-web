@@ -9,9 +9,6 @@ const StyledIconHover = styled.div`
     opacity: 0;
     position: absolute;
     padding: 0.2em;
-    /* top: -30%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     font-size: 0.8em;
     width: max-content;
     background-color: var(--color-grey-900);

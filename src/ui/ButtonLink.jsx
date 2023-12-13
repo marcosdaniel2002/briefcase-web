@@ -25,7 +25,7 @@ const StyledButtonLink = styled.a`
 
 function ButtonLink({ children, href }) {
   return (
-    <StyledButtonLink href={href} target="_blank" onClick>
+    <StyledButtonLink href={href} target="_blank">
       {children}
     </StyledButtonLink>
   );
