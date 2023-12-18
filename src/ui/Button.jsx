@@ -32,7 +32,7 @@ const sizes = {
 const Button = styled.button`
   border-radius: 99999px;
   padding: 1.5em 4em;
-  margin: auto;
+  /* margin: auto; */
   border: none;
   display: flex;
   align-items: center;

@@ -30,7 +30,7 @@ const NavList = styled.ul`
 
 const StyledNavLink = styled(NavLink)`
   position: relative;
-  padding: 0 1em;
+  padding: 0.2em 0.5em;
 
   &.active {
     color: var(--color-grey-900);

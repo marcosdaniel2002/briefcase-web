@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { breakpoints } from "../styles/Breakpoints";
+import { NavLink } from "react-router-dom";
+
 import { useExtendNavbar } from "../context/ExtendNavbarContext";
+import { breakpoints } from "../styles/Breakpoints";
 import ButtonTheme from "./ButtonTheme";
 
 const Nav = styled.nav`
@@ -20,6 +21,12 @@ const Nav = styled.nav`
 
   @media (min-width: ${breakpoints.sm}) {
     display: none;
+  }
+  & button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
@@ -59,13 +66,11 @@ function ExtendedNav() {
         </li>
         <li>
           <StyledNavLink to="/projects" onClick={toggleExtendNavbar}>
-            Project
+            Projects
           </StyledNavLink>
         </li>
-        <li>
-          <ButtonTheme>Switch to</ButtonTheme>
-        </li>
       </NavList>
+      <ButtonTheme>Switch</ButtonTheme>
     </Nav>
   );
 }

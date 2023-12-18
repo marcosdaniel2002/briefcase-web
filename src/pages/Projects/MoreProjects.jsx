@@ -6,6 +6,12 @@ const StyledMoreProjects = styled.div`
   flex-direction: column;
   gap: 2em;
   padding: 3em 0;
+  margin-top: 10em;
+  section {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
 `;
 
 const Header = styled.header`
@@ -31,16 +37,18 @@ function MoreProjects({ projects }) {
           <h2>More projects</h2>
           <span></span>
         </Header>
-        {projects.map((project, i) => (
-          <ProjectCardV2
-            key={i}
-            title={project.title}
-            description={project.description}
-            tecnologies={project.tecnologies}
-            live={project.live}
-            github={project.github}
-          />
-        ))}
+        <section>
+          {projects.map((project, i) => (
+            <ProjectCardV2
+              key={i}
+              title={project.title}
+              description={project.description}
+              tecnologies={project.tecnologies}
+              live={project.live}
+              github={project.github}
+            />
+          ))}
+        </section>
       </StyledMoreProjects>
     </>
   );
