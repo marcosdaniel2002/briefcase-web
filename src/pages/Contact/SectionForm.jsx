@@ -65,7 +65,7 @@ const Form = styled.form`
 `;
 
 function SectionForm() {
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, formState, reset } = useForm();
   const { errors } = formState;
   const [isLoading, setIsLoading] = useState(false);
   const [messageSend, setMessageSend] = useState(null);
@@ -79,6 +79,7 @@ function SectionForm() {
       setMessageSend({ error: err.message });
     } finally {
       setIsLoading(false);
+      reset();
     }
   }
 
@@ -98,6 +99,7 @@ function SectionForm() {
             {...register("name", {
               required: "This field is required",
             })}
+            disabled={messageSend}
           />
           {errors?.name?.message && (
             <span className="errors">{errors.name.message}</span>
@@ -111,6 +113,7 @@ function SectionForm() {
             {...register("email", {
               required: "This field is required",
             })}
+            disabled={messageSend}
           />
           {errors?.email?.message && (
             <span className="errors">{errors.email.message}</span>
@@ -123,6 +126,7 @@ function SectionForm() {
             {...register("message", {
               required: "This field is required",
             })}
+            disabled={messageSend}
           />
           {errors?.message?.message && (
             <span className="errors">{errors.message.message}</span>

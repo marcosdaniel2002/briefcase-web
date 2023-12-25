@@ -34,14 +34,13 @@ const NavList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-
-  & li {
-    padding: 2rem;
-    border-top: var(--color-grey-200) solid 1px;
-  }
 `;
 
-const StyledNavLink = styled(NavLink)``;
+const StyledNavLink = styled(NavLink)`
+  display: block;
+  padding: 2rem;
+  border-top: var(--color-grey-200) solid 1px;
+`;
 
 function ExtendedNav() {
   const { isExtend, toggleExtendNavbar } = useExtendNavbar();
