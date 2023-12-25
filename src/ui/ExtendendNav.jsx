@@ -24,7 +24,7 @@ const Nav = styled.nav`
   }
   & button {
     position: absolute;
-    bottom: 0.5em;
+    bottom: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
   }
