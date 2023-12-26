@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useObserver } from "../../hooks/useObserver";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 function Home() {
   const [observer, setElements, entries] = useObserver({
@@ -32,6 +33,7 @@ function Home() {
       <Section1 />
       <Section2 />
       <Section2 />
+      <Section3 />
     </>
   );
 }

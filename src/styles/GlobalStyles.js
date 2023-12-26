@@ -200,7 +200,7 @@ opacity: 0;
 transform: translateY(8rem);
 }
 .hidden {
-    opacity: 0;
+    opacity: 0 !important;
 }
 `;
 

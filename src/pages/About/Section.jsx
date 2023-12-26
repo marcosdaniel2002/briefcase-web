@@ -3,7 +3,7 @@ import ProfilePicture from "./ProfilePicture";
 import { breakpoints } from "../../styles/Breakpoints";
 
 const StyledSection = styled.section`
-  background-color: var(--color-brand-600);
+  background-color: var(--color-blue-100);
   padding: 15% 15%;
   padding-bottom: 20rem;
   h1 {
@@ -13,6 +13,7 @@ const StyledSection = styled.section`
 
   p {
     text-align: center;
+    line-break: anywhere;
   }
 
   @media (min-width: ${breakpoints.lg}) {
@@ -27,11 +28,15 @@ function Section() {
       <ProfilePicture />
       <h1>Hi there!, Nice to meet you.</h1>
       <p>
-        Since beginning my journey as a freelance designer over 11 years ago,
-        I've done remote work for agencies, consulted for startups, and
-        collaborated with talented people to create digital products for both
-        business and consumer use. I'm quietly confident, naturally curious, and
-        perpetually working on improving my chops one design problem at a time.
+        I'm a Frontend Web Developer building the Front-end of Websites and Web
+        Applications that leads to the success of the overall product. Check out
+        some of my work in the Projects section. I also like sharing content
+        related to the stuff that I have learned over the years in Web
+        Development so it can help other people of the Dev Community. Feel free
+        to Connect or Follow me on my Linkedin where I post useful content
+        related to Web Development and Programming I'm open to Job opportunities
+        where I can contribute, learn and grow. If you have a good opportunity
+        that matches my skills and experience then don't hesitate to contact me.
       </p>
     </StyledSection>
   );

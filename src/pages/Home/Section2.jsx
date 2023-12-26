@@ -42,7 +42,7 @@ const Skills = styled.div`
 
 function Section2() {
   return (
-    <Section className={"section--hidden"}>
+    <Section className="section--hidden">
       <h2>My main skills on develop</h2>
       <Skills>
         {skills.map((skill, i) => (
