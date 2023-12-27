@@ -35,7 +35,7 @@ function Section3() {
       <h2>Some favorite projects</h2>
       <p>
         Here are a few past design projects I've worked on. Want to see more?{" "}
-        <Link to="projects">projects</Link>
+        <Link to="/projects">projects</Link>
       </p>
       <div className="container">
         <ProjectCard path="./forkify-home1.png" />
