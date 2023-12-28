@@ -5,9 +5,8 @@ import { breakpoints } from "../../styles/Breakpoints";
 
 const Section = styled.section`
   text-align: center;
-  padding: 8rem 0;
+  margin: 8rem 0;
   transition: background-color 0.3s, border 0.3s, transform 1s, opacity 1s;
-
   & h2 {
     margin: 5rem 0;
   }
@@ -38,9 +37,15 @@ function Section3() {
         <Link to="/projects">projects</Link>
       </p>
       <div className="container">
-        <ProjectCard path="./forkify-home1.png" />
-        <ProjectCard path="./wild-oasis-home1.png" />
-        <ProjectCard path="./wild-oasis-home1.png" />
+        <ProjectCard
+          path="./forkify-home1.png"
+          description="An menu of pizzas, you can search your favorite pizza and prepare it!"
+        />
+        <ProjectCard
+          path="./wild-oasis-home1.png"
+          description="Manage rent of cabins, create account, and more."
+        />
+        <ProjectCard path="./usePopcorn-home.png" description="asdasd" />
       </div>
     </Section>
   );

@@ -67,6 +67,28 @@ const projects = [
   },
   {
     imgPath:
+      "https://bljdqguwducancsihmeo.supabase.co/storage/v1/object/public/briefcase-web/Projects/use-Popcorn.png",
+    title: "usePopCorn",
+    description: "Find your favorite movies on this api!",
+    tecnologies: [
+      {
+        name: "Javascript",
+        icon: <IoLogoJavascript color="#F7E025" />,
+      },
+      {
+        name: "React JS",
+        icon: <FaReact color="#76e2f8" />,
+      },
+      {
+        name: "Sass",
+        icon: <FaSass color="#CF6C9C" />,
+      },
+    ],
+    live: "https://use-popcorn-1o8w85fuc-marcos-daniels-projects.vercel.app",
+    github: "https://github.com/marcosdaniel2002/usePopcorn",
+  },
+  {
+    imgPath:
       "https://bljdqguwducancsihmeo.supabase.co/storage/v1/object/public/briefcase-web/Projects/PokeAPI.png",
     title: "Poke API",
     description: "Show pokemons filtered by generations, and them evolutions.",

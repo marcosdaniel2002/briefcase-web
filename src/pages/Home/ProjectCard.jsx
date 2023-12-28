@@ -16,6 +16,7 @@ const StyledProjectCard = styled.div`
     top: 0;
     background-color: black;
     height: 100%;
+    width: 100%;
     border-radius: inherit;
     color: white;
     display: grid;
@@ -25,7 +26,7 @@ const StyledProjectCard = styled.div`
   }
 `;
 
-function ProjectCard({ path }) {
+function ProjectCard({ path, description }) {
   const [isHover, setIsHover] = useState(false);
   return (
     <StyledProjectCard
@@ -33,9 +34,7 @@ function ProjectCard({ path }) {
       onMouseLeave={() => setIsHover(false)}
     >
       <img src={path} alt="forkify" />
-      <div className={`overlay ${isHover ? "" : "hidden"}`}>
-        Manage rent of cabins, create account, and more.
-      </div>
+      <div className={`overlay ${isHover ? "" : "hidden"}`}>{description}</div>
     </StyledProjectCard>
   );
 }

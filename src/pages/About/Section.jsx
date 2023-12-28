@@ -3,9 +3,9 @@ import ProfilePicture from "./ProfilePicture";
 import { breakpoints } from "../../styles/Breakpoints";
 
 const StyledSection = styled.section`
-  background-color: var(--color-blue-100);
   padding: 15% 15%;
   padding-bottom: 20rem;
+  box-shadow: var(--shadow-lg);
   h1 {
     margin: 2em 0;
     text-align: center;
