@@ -31,7 +31,13 @@ function ProfilePicture() {
 
       <h3>Marcos Daniel Teran Cruz</h3>
       <span>Software engineer</span>
-      <FaLinkedin />
+      <a
+        href="https://www.linkedin.com/in/marcos-t-a58537221/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaLinkedin />
+      </a>
     </StyledProfilePicture>
   );
 }

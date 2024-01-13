@@ -36,14 +36,14 @@ function SocialMedia() {
         <FaGithub />
       </a>
       <a
-        href="https://github.com/marcosdaniel2002"
+        href="https://www.linkedin.com/in/marcos-t-a58537221/"
         target="_blank"
         rel="noreferrer"
       >
         <FaLinkedin />
       </a>
       <a
-        href="https://github.com/marcosdaniel2002"
+        href="https://www.instagram.com/marcossdaniel20/"
         target="_blank"
         rel="noreferrer"
       >

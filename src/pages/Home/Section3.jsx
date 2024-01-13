@@ -40,12 +40,18 @@ function Section3() {
         <ProjectCard
           path="./forkify-home1.png"
           description="An menu of pizzas, you can search your favorite pizza and prepare it!"
+          live="https://cool-sprite-a05710.netlify.app/"
         />
         <ProjectCard
           path="./wild-oasis-home1.png"
           description="Manage rent of cabins, create account, and more."
+          live="https://the-wild-oasis-hwbjugv4r-marcos-daniels-projects.vercel.app"
         />
-        <ProjectCard path="./usePopcorn-home.png" description="asdasd" />
+        <ProjectCard
+          path="./usePopcorn-home.png"
+          description="Find your favorite movies on this API!"
+          live="https://use-popcorn-1o8w85fuc-marcos-daniels-projects.vercel.app/"
+        />
       </div>
     </Section>
   );

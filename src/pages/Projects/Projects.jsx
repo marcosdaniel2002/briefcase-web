@@ -61,6 +61,10 @@ const projects = [
         name: "React router",
         icon: <img src="./react-router.svg" alt="react router svg" />,
       },
+      {
+        name: "Redux",
+        icon: <img src="./Redux-icon.png" alt="react redux svg" />,
+      },
     ],
     live: "https://fast-react-pizza-three.vercel.app/",
     github: "https://github.com/marcosdaniel2002/fast-react-pizza",

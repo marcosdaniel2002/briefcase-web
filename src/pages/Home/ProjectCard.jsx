@@ -5,8 +5,10 @@ const StyledProjectCard = styled.div`
   width: 300px;
   height: 300px;
   position: relative;
-  border-radius: 1em;
   cursor: pointer;
+  a {
+    border-radius: 0.5em;
+  }
   img {
     object-fit: cover;
     border-radius: inherit;
@@ -26,15 +28,19 @@ const StyledProjectCard = styled.div`
   }
 `;
 
-function ProjectCard({ path, description }) {
+function ProjectCard({ path, description, live }) {
   const [isHover, setIsHover] = useState(false);
   return (
     <StyledProjectCard
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <img src={path} alt="forkify" />
-      <div className={`overlay ${isHover ? "" : "hidden"}`}>{description}</div>
+      <a href={live} target="_blank" rel="noreferrer">
+        <img src={path} alt="forkify" />
+        <div className={`overlay ${isHover ? "" : "hidden"}`}>
+          {description}
+        </div>
+      </a>
     </StyledProjectCard>
   );
 }

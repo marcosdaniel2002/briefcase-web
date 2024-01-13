@@ -56,25 +56,41 @@ function SectionContact() {
         <p>Get in touch with me via social media or email.</p>
         <ul>
           <li>
-            <a href="">
+            <a
+              href="https://twitter.com/MarcosT43147372"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillTwitterSquare color="#189ACD" />
               Twitter
             </a>
           </li>
           <li>
-            <a href="">
+            <a
+              href="https://www.facebook.com/marcos.teran.7549?mibextid=kFxxJD"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaSquareFacebook color="#43609c" />
               Facebook
             </a>
           </li>
           <li>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/marcos-t-a58537221/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin color="#0982c0" />
               LinkedIn
             </a>
           </li>
           <li>
-            <a href="">
+            <a
+              href="https://www.instagram.com/marcossdaniel20/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaSquareInstagram color="#ef0074" />
               Instagram
             </a>
