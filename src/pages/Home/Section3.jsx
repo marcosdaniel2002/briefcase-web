@@ -5,7 +5,7 @@ import { breakpoints } from "../../styles/Breakpoints";
 
 const Section = styled.section`
   text-align: center;
-  margin: 8rem 0;
+  margin-bottom: 15rem;
   transition: background-color 0.3s, border 0.3s, transform 1s, opacity 1s;
   & h2 {
     margin: 5rem 0;
