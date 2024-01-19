@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { FaCode } from "react-icons/fa";
+
 import ColumnDeveloper from "./ColumnDeveloper";
 import { breakpoints } from "../../styles/Breakpoints";
 
@@ -22,13 +24,36 @@ const StyledSection = styled.section`
   }
 `;
 
+const skills = [
+  {
+    icon: <FaCode />,
+    title: "Frontend Developer",
+    description:
+      "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+    languages: "HTML, CSS, Sass, Git, Github",
+    devtools: ["Vercel", "Github", "Terminal", "Supabase", "Netlify"],
+  },
+  {
+    title: "Backend Developer",
+    description: "I like the bridge between frontend and backend.",
+    languages: "",
+    devtools: ["SQLServer", "Node JS", "Express"],
+  },
+];
+
 function SectionSkills() {
   return (
     <StyledSection>
       <div className="content">
-        <ColumnDeveloper />
-        <ColumnDeveloper />
-        <ColumnDeveloper />
+        {skills.map((skill, i) => (
+          <ColumnDeveloper
+            key={i}
+            title={skill.title}
+            description={skill.description}
+            languages={skills.languages}
+            devtools={skill.devtools}
+          />
+        ))}
       </div>
     </StyledSection>
   );

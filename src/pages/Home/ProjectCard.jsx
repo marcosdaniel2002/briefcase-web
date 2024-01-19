@@ -1,17 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { breakpoints } from "../../styles/Breakpoints";
 
 const StyledProjectCard = styled.div`
-  width: 300px;
-  height: 300px;
   position: relative;
   cursor: pointer;
+  width: 300px;
+  height: 150px;
   a {
     border-radius: 0.5em;
   }
   img {
     object-fit: cover;
     border-radius: inherit;
+    width: 300px;
+    height: 150px;
   }
   .overlay {
     position: absolute;
@@ -25,6 +28,13 @@ const StyledProjectCard = styled.div`
     place-items: center;
     opacity: 0.8;
     transition: opacity 0.4s;
+  }
+
+  @media (min-width: ${breakpoints.lg}) {
+    height: 300px;
+    img {
+      height: 300px;
+    }
   }
 `;
 

@@ -22,7 +22,7 @@ const Section = styled.section`
     padding: 10em;
     article {
       max-width: 40vw;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
     .second-article {
@@ -33,7 +33,7 @@ const Section = styled.section`
 
 function Section2() {
   return (
-    <Section className="section--hidden">
+    <Section className="">
       <article className="first-article">
         <h1>Design</h1>
         <p>

@@ -52,29 +52,24 @@ const Column = styled.div`
   }
 `;
 
-function ColumnDeveloper() {
+function ColumnDeveloper({ title, description, languages, devtools }) {
   return (
     <Column>
       <span className="logo">
         <FaCode />
       </span>
 
-      <h1>Frontend Developer</h1>
-      <p>
-        I like to code things from scratch, and enjoy bringing ideas to life in
-        the browser.
-      </p>
+      <h1>{title}</h1>
+      <p>{description}</p>
 
       <h2>Languages i speak</h2>
-      <p>HTML, CSS, Sass, Git, Github</p>
+      <p>{languages}</p>
 
       <h2>Dev tools:</h2>
       <ul>
-        <li>Vercel</li>
-        <li>Github</li>
-        <li>Terminal</li>
-        <li>Supabase</li>
-        <li>Netlify</li>
+        {devtools.map((tool, i) => (
+          <li key={i}>{tool}</li>
+        ))}
       </ul>
     </Column>
   );
