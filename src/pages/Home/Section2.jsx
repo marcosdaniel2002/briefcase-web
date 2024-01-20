@@ -33,7 +33,7 @@ const Section = styled.section`
 
 function Section2() {
   return (
-    <Section className="">
+    <Section className="section--hidden">
       <article className="first-article">
         <h1>Design</h1>
         <p>
