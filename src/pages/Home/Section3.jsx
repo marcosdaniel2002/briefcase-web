@@ -38,9 +38,9 @@ function Section3() {
       </p>
       <div className="container">
         <ProjectCard
-          path="./forkify-home1.png"
-          description="An menu of pizzas, you can search your favorite pizza and prepare it!"
-          live="https://cool-sprite-a05710.netlify.app/"
+          path="./o soundz1.png"
+          description="Find your favorite songs on Spotify API!"
+          live="https://o-soundz.vercel.app/"
         />
         <ProjectCard
           path="./wild-oasis-home1.png"
@@ -48,9 +48,9 @@ function Section3() {
           live="https://the-wild-oasis-hwbjugv4r-marcos-daniels-projects.vercel.app"
         />
         <ProjectCard
-          path="./usePopcorn-home.png"
-          description="Find your favorite movies on this API!"
-          live="https://use-popcorn-1o8w85fuc-marcos-daniels-projects.vercel.app/"
+          path="./forkify-home1.png"
+          description="An menu of pizzas, you can search your favorite pizza and prepare it!"
+          live="https://cool-sprite-a05710.netlify.app/"
         />
       </div>
     </Section>

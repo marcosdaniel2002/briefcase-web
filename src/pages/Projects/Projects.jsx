@@ -9,8 +9,32 @@ import { RiSupabaseFill } from "react-icons/ri";
 
 const projects = [
   {
-    imgPath:
-      "https://bljdqguwducancsihmeo.supabase.co/storage/v1/object/public/briefcase-web/Projects/the-wild-oasis2.png",
+    imgPath: "./Projects images/O soundz.png",
+    title: "O Soundz",
+    description: "Now can you find your favorite songs on Spotify API!",
+    tecnologies: [
+      {
+        name: "Javascript",
+        icon: <IoLogoJavascript color="#F7E025" />,
+      },
+      {
+        name: "React JS",
+        icon: <FaReact color="#76e2f8" />,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss color="#16BECB" />,
+      },
+      {
+        name: "React router",
+        icon: <img src="./react-router.svg" alt="react router svg" />,
+      },
+    ],
+    live: "https://o-soundz.vercel.app/",
+    github: "https://github.com/marcosdaniel2002/O-soundz",
+  },
+  {
+    imgPath: "./Projects images/the-wild-oasis2.png",
     title: "The Wild Oasis",
     description:
       "Manage rent of cabins, create account, and more.\nemail: mteranc@unemi.edu.ec password: 123456789",
@@ -40,8 +64,7 @@ const projects = [
     github: "https://github.com/marcosdaniel2002/the-wild-oasis",
   },
   {
-    imgPath:
-      "https://bljdqguwducancsihmeo.supabase.co/storage/v1/object/public/briefcase-web/Projects/Fast%20React%20Pizza.png",
+    imgPath: "./Projects images/Fast React Pizza.png",
     title: "Fast React Pizza",
     description: "Order a pizza and we gonna prepare it!",
     tecnologies: [
@@ -70,8 +93,7 @@ const projects = [
     github: "https://github.com/marcosdaniel2002/fast-react-pizza",
   },
   {
-    imgPath:
-      "https://bljdqguwducancsihmeo.supabase.co/storage/v1/object/public/briefcase-web/Projects/use-Popcorn.png",
+    imgPath: "./Projects images/use-Popcorn.png",
     title: "usePopCorn",
     description: "Find your favorite movies on this api!",
     tecnologies: [
