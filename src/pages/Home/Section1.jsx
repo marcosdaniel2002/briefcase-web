@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Button from "../../ui/Button";
 import TypeWriter from "../../ui/TypeWriter";
 import { useState } from "react";
-import Modal from "./Modal";
 
 const Section = styled.section`
   display: flex;
@@ -39,6 +38,12 @@ const Content = styled.div`
 function Section1() {
   const [isModal, setIsModal] = useState(false);
 
+  function onDownload() {
+    const language =
+      navigator.language || navigator.userLanguage === "es-ES" ? "ESP" : "ENG";
+    window.open(`${language}_CV_Marcos Daniel Teran Cruz.pdf`);
+  }
+
   return (
     <Section>
       <ContainerImage>
@@ -49,7 +54,7 @@ function Section1() {
           Hello, my name is<TypeWriter> Marcos Teran.</TypeWriter>
         </span>
         <span>I'm a web developer :)</span>
-        <Button size="small" onClick={() => setIsModal((show) => !show)}>
+        <Button size="small" onClick={onDownload}>
           Download Curriculum
         </Button>
       </Content>
