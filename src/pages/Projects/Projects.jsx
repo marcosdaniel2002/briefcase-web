@@ -6,8 +6,35 @@ import { FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
 import { SiStyledcomponents, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiSupabaseFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
 
 const projects = [
+  {
+    imgPath: "./Projects images/Natours.png",
+    title: "Natours",
+    description: "What are you waiting for? user: marcosdanny14@gmail.com password: test1234",
+    tecnologies: [
+      {
+        name: "Javascript",
+        icon: <IoLogoJavascript color="#F7E025" />,
+      },
+      {
+        name: "Node JS",
+        icon: <FaNodeJs color="#70A36B" />,
+      },
+      {
+        name: "MongoDB",
+        icon: <DiMongodb color="#70A36B" />,
+      },
+      {
+        name: "Express",
+        icon: <img src="./Expressjs.png" alt="Express js png" />,
+      },
+    ],
+    live: " https://natours-marcosdaniel-374d4286bdc0.herokuapp.com/",
+    github: "https://github.com/marcosdaniel2002/natours",
+  },
   {
     imgPath: "./Projects images/O soundz.png",
     title: "O Soundz",
