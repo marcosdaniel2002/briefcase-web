@@ -43,14 +43,14 @@ function Section3() {
           live="https://o-soundz.vercel.app/"
         />
         <ProjectCard
+          path="./Reddit.png"
+          description="Reddit clone with React.js, Tailwind CSS and Node.js"
+          live="https://reddit-frontend.vercel.app/"
+        />
+        <ProjectCard
           path="./wild-oasis-home1.png"
           description="Manage rent of cabins, create account, and more."
           live="https://the-wild-oasis-hwbjugv4r-marcos-daniels-projects.vercel.app"
-        />
-        <ProjectCard
-          path="./forkify-home1.png"
-          description="An menu of pizzas, you can search your favorite pizza and prepare it!"
-          live="https://cool-sprite-a05710.netlify.app/"
         />
       </div>
     </Section>
